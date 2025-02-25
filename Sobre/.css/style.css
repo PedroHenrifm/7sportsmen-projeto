@@ -1,0 +1,36 @@
+body {
+
+    text-align: center;
+    background-color: #242424
+}
+
+h1, h2, p, span {
+    color: white;
+    text-align: center;
+	
+
+}
+.meu-texto {
+    color: white; /* Apenas textos dessa classe */
+}
+
+img {
+    text-align: right;
+
+
+
+
+
+}
+
+
+.link-bio img {
+    width: 45px;
+    height: 45px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+
+
+
+
+}

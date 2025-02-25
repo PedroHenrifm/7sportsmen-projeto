@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+/* Font Family base */
+* {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nunito-strong {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/* Conteudo da página */
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+/* Lado ESQUERDO do login */
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    background-color: #040404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login {
+
+    h1 {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vw;
+        color: #ffffff;
+        position: fixed;
+        top: 10px;
+    }
+
+    .icon-title {
+        width: 8.5%;
+    }
+
+    .left-login-image{
+        width: 42%;
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+/* Lado DIREITO do login */
+.right-login{
+    width: 50vw;
+    background-color: #040404;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px ;
+    background: #040404;
+    border-radius: 20px;
+
+}
+
+.BV{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+
+    .m-0 {
+        margin: 0!important;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 35px;
+    }
+
+    .info-text {
+        width: 85%;
+        color: rgba(128, 128, 128, 0.75);
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* Caixas dos inputs com os icons */
+.textfield{
+    width: 100%;
+    display: flex;  
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    background-color: #696768;
+    border-radius: 25px;
+
+}
+
+.textfield > img {
+    margin: 0 0px 0 10px;
+    width: 40px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;  
+    border-radius: 25px;
+    padding: 15px 15px 15px 5px;
+    background: #696768;
+    color:#ffffff;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > input::placeholder{
+    color: #ffffff6e;
+}
+
+/* CSS dos btns */
+.RL{
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.RL p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.btn-login{
+    width: 100%;
+    padding: 13px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 25px;
+    border: 2px solid #ff4d4d ;
+    box-shadow: 0px 8px #ff4d4d;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ff4d4d;
+    background:#2e2d2d;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* animação do button */
+.btn-login:hover {
+    color: #2e2d2d;
+    background-color: #ff4e4e;
+    border-color: #2e2d2d;
+    box-shadow: 0px 0px #2e2d2d;
+}
+
+.btn-cadastro{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #f84c4c;
+    background: #423f3fd0;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none ;
+    }
+
+    .left-login {
+        width: 100% ;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100% ;
+        height: auto;
+    }
+
+    .left-login-image{
+        width: 100vw;
+    }
+    
+    .card-login{
+        width: 90%;
+    }
+}
