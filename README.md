@@ -13,3 +13,7 @@ O 7 Sportsmen é um site desenvolvido como parte de um projeto acadêmico, com
 - *JavaScript* - Funcionalidades interativas  
 - *PHP* - Backend  
 - *GitHub Pages* - Hospedagem do site
+
+## Acesse o site
+
+Você pode acessar o site em [https://pedrohenrifm.github.io/7sportsmen-projeto/]
